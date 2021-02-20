@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="6238205121_Lab04_PartA">
+    <output-path>$PROJECT_DIR$/out/artifacts/6238205121_Lab04_PartA</output-path>
+    <root id="archive" name="6238205121_Lab04_PartA.jar">
+      <element id="module-output" name="Lab04-StackAndQueqe" />
+    </root>
+  </artifact>
+</component>
