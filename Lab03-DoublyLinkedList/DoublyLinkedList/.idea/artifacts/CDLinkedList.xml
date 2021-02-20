@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CDLinkedList">
+    <output-path>$PROJECT_DIR$/out/artifacts/CDLinkedList</output-path>
+    <root id="archive" name="CDLinkedList.jar">
+      <element id="module-output" name="DoublyLinkedList" />
+    </root>
+  </artifact>
+</component>
