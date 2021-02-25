@@ -84,10 +84,15 @@ public class QueueArray implements MyQueue {
 	public void reverse() throws EmptyQueueException {
 		if(isEmpty())
 			return;
-		
-		
-		
-		
+		if(size == 1){
+			return;
+		}
+		int[] temp = new int[theArray.length];
+		for(int i = 0; i < size; i++){
+			temp[size - i - 1] = theArray[(front + i) % theArray.length];
+		}
+		theArray = temp;
+		front = 0;
 	}
 	
 	public static void main(String[] args) {
