@@ -12,15 +12,19 @@ public class PriorityQueue {
 		if(q.isFull()){
 			return;
 		}
-		if(q.isEmpty() || q.size() == 1){
+		if(q.isEmpty()){
 			q.insertLast(x);
 			return;
 		}
-		int min = (q.front() < x)?q.front():x, size = q.size() + 1;
-		while(q.front() != min || q.size() != size){
+		int min = Math.min(q.front(), x), size = q.size() + 1, n = 0;
+		while((q.front() != min || q.size() != size)){
 			int temp = q.removeFirst();
-			if (temp > x && q.size() + 1 < size) q.insertLast(x);
+			if (temp > x && q.size() + 1 != size) q.insertLast(x);
 			q.insertLast(temp);
+			n++;
+			if(n == q.size()){
+				q.insertLast(x);
+			}
 		}
 	}
 
